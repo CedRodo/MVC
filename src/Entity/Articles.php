@@ -1,6 +1,6 @@
 <?php
 
-require_once 'SimpleOrm.class.php';
+include_once __DIR__.'/../../vendor/SimpleOrm.class.php';
 
 class Articles extends SimpleOrm {
     public $id;
@@ -8,6 +8,7 @@ class Articles extends SimpleOrm {
     public $titre;
     public $description;
     public $prix;
+    public $img;
 }
 
 ?>

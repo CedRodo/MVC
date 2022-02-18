@@ -892,3 +892,11 @@ abstract class SimpleOrm
         return $values;
     }
 }
+
+$conn = new mysqli('127.0.0.1', 'root', '');
+// var_dump($conn);
+if ($conn->connect_error)
+die(sprintf('Unable to connect to the database. %s', $conn->connect_error));
+$conn->query("SET NAMES utf8");
+ 
+SimpleOrm::useConnection($conn, 'coursphp');
