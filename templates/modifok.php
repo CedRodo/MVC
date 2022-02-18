@@ -4,6 +4,6 @@
 <a href="/">Retour vers la page d'accueil</a>
 
 <?php
-require 'footer.php';
+require_once 'footer.php';
 ?>
 

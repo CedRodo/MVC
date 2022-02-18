@@ -1,11 +1,8 @@
-<?php include "header.php"; ?>
+<?php include_once "header.php"; ?>
 
 <?php
 
-require "startbd.php";
-bd();
-
-require_once "Articles.php";
+require_once "../src/Entity/Articles.php";
 
 ?>
 

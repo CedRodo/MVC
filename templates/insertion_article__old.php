@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include_once 'header.php'; ?>
 
 <h3>Ajout d'article</h3>
 

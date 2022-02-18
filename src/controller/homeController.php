@@ -1,2 +1,1 @@
-<?php
-    include __DIR__.'/../../templates/accueil.php';
+<?php include __DIR__.'/../../templates/accueil.php';

@@ -36,6 +36,10 @@ else if ($_SERVER['PATH_INFO']=="/suppression_article"){
     include __DIR__.'/../src/controller/supp_artController.php';
 }
 
+else if ($_SERVER['PATH_INFO']=="/favoris_articles"){
+    include __DIR__.'/../src/controller/fav_artController.php';
+}
+
 // EXO CREEZ un nouveau projet avec un routeur dans le dossier public
 // avec plusieurs page 2 ou 3 
 // avec le serveur lancé depuis le terminal
