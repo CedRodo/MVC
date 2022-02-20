@@ -18,12 +18,14 @@ h1 {
 }
 
 h2 {
-    margin-left: -5px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 80px;
     margin-bottom: 80px;
+    width:fit-content;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 25px;
     font-size: 30px;
     border: 0px solid black;
     background-color: rgb(209, 195, 195);
@@ -123,6 +125,10 @@ hr {
     color: rgba(0, 255, 242, 0.301);
 }
 
+td {
+  text-align: center;
+}
+
 .centering {
     display: block;
     text-align: center;
@@ -213,7 +219,7 @@ hr {
     box-sizing: border-box;
     padding: 15px 30px;
     width: 800px;
-    max-height: 1150px;
+    max-height: 1200px;
     background-color: rgba(248, 248, 248, 0.616);
     margin-bottom: 100px;
 }
@@ -262,6 +268,7 @@ hr {
 
 .produit .photos img {
     height: 250px;
+    margin: 0px 20px;
 }
 
 .produit .modsup {    
@@ -349,6 +356,117 @@ hr {
 .produit2 .modsup button a {    
     color: wheat;
 }
+
+.panier-form {
+  display: inline !important;
+  margin-bottom: auto;
+}
+
+.panier-form input {
+  max-width: 47px;
+}
+
+.shopping-cart-quant {
+  position: relative; top: -6px;
+}
+
+.art_icons {
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#favoris {
+    background-color: rgba(248, 248, 248, 0.616);
+}
+
+.favoris_articles {
+  height: 300px;
+  width: 95%;
+  padding: 0px 20px;
+  display: flex;
+}
+
+.favoris_articles .image_article {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.favoris_articles .image_article img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.favoris_articles .contenu_article {
+  text-decoration: none;
+  padding-left: 100px;
+  margin-left: 50px;
+  width: 40%;
+  height: 100%;
+}
+
+.favoris_articles .contenu_article a {
+  text-decoration: none;
+}
+
+.favoris_articles .action_article {
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.favoris_articles .action_article button {
+  width: 200px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: beige;
+}
+
+.favoris_articles .action_article .action_article_quantite {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.favoris_articles .action_article input[type="number"] {
+  margin-right: 10px;
+  position: relative;
+  bottom: -12px;
+  height: 17px;
+  width: 40px;
+}
+
+.favoris_articles .action_article input[type="submit"] {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: beige;
+  background-color: rgb(51, 170, 51);
+}
+
+.favoris_articles .titre_favori {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favoris_articles .titre_favori span{
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+/* .art_icons img {
+    margin-left: 630px;
+    margin-left: auto;
+} */
 
 /* .carousel-imagesize {
     margin-left: auto;
