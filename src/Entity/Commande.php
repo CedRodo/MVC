@@ -2,14 +2,14 @@
 
 include_once __DIR__.'/../../vendor/SimpleOrm.class.php';
 
-class Articles extends SimpleOrm {
+class Commande extends SimpleOrm {
     public $id;
+    public $id_article;
     public $ref;
     public $titre;
-    public $description;
-    public $prix;
     public $img;
-    public $datefavori;
+    public $prix;
+    public $quantite;
     public $datepanier;
 }
 

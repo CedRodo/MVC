@@ -67,6 +67,14 @@ else if ($_SERVER['PATH_INFO']=="/vider_panier"){
     include __DIR__.'/../src/controller/vider_panController.php';
 }
 
+else if ($_SERVER['PATH_INFO']=="/commande"){
+    include __DIR__.'/../src/controller/commande_Controller.php';
+}
+
+else if ($_SERVER['PATH_INFO']=="/bondecommande"){
+    include __DIR__.'/../src/controller/bdc_Controller.php';
+}
+
 // else if ($_SERVER['PATH_INFO']=="/add_cart"){
    
 //     include __DIR__.'/../src/controller/CartController.php';

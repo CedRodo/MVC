@@ -29,36 +29,7 @@
 <br/>
 <h1>Sales Online</h1>
 <br/>
-<h3>Liste des articles</h3>
-
-<br/>
-<br/>
-
-<form style="margin: 0 0 25px 25px;" method="post" action="<?php echo '/'; ?>">
-<label style ="text-decoration: none;" for="articles-select">Afficher les articles :</label>
-
-<select name="affichage" id="articles-select" onchange="this.form.submit();">
-    <option value="">--Type d'affichage--</option>
-    <option value="coteacote">Côte à côte</option>
-    <option value="dessusdessous">Dessus, Dessous</option>
-</select>
-</form>
-<br/>
-<br/>
 
 
-<section>
-
-<?php 
-if (isset($_POST['affichage'])==false) {
-    include __DIR__.'/../src/controller/liste_artController.php';
-    }  else
-if ($_POST['affichage']=="coteacote") {
-    include 'liste_articles.php';
-    } elseif ($_POST['affichage']=="dessusdessous") {
-    include 'liste_articles2.php';
-    }
-
-?>
 
 <?php include_once 'footer.php'; ?>

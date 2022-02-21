@@ -12,6 +12,8 @@
     <title>Sales online</title>
 </head>
 <body>
+<?php date_default_timezone_set('Europe/Paris');
+$datedujour = date('d/m/Y'); ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sales Online</a>
@@ -24,13 +26,16 @@
           <a class="nav-link active" aria-current="page" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="liste_articles">Liste d'articles</a>
+          <a class="nav-link" href="liste_articles">Liste des articles</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="creer_article">Ajout d'article</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="favoris_articles"">Liste des favoris</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="panier_articles"">Panier</a>
         </li>
       </ul>
       <form class="d-flex">
