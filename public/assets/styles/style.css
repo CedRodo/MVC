@@ -3,7 +3,7 @@ body {
 }
 
 .container-mvc-article {
-    min-height: 750px;
+    min-height: 680px;
 }
 
 h1 {
@@ -441,6 +441,18 @@ td {
   bottom: -12px;
   height: 17px;
   width: 40px;
+}
+
+.favoris_articles .action_article input[type="number"]::before {
+  content: "OK";
+  /* background: url(../icons/shopping-basket-green.png);
+  position:absolute;
+  top:0px;
+  left:0px; */
+}
+
+input::before {
+  content: "OK";
 }
 
 .favoris_articles .action_article input[type="submit"] {

@@ -63,8 +63,12 @@ else if ($_SERVER['PATH_INFO']=="/panier_articles"){
     include __DIR__.'/../src/controller/pan_artController.php';
 }
 
-else if ($_SERVER['PATH_INFO']=="/add_cart"){
-   
-    include __DIR__.'/../src/controller/CartController.php';
+else if ($_SERVER['PATH_INFO']=="/vider_panier"){
+    include __DIR__.'/../src/controller/vider_panController.php';
 }
+
+// else if ($_SERVER['PATH_INFO']=="/add_cart"){
+   
+//     include __DIR__.'/../src/controller/CartController.php';
+// }
 
